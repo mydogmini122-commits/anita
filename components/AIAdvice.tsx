@@ -14,14 +14,16 @@ const AIAdvice: React.FC<AIAdviceProps> = ({ advice }) => {
       
       {/* --- SECTION 1: HUMOROUS DIAGNOSIS (The "Kid" Advisor) --- */}
       <div className="bg-white rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] p-8 border border-slate-100 w-full">
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-lg font-bold text-slate-900 flex items-center">
+        <div className="mb-6">
+          <h3 className="text-lg font-bold text-slate-900 flex items-center mb-3">
               <ShieldCheck className="w-5 h-5 mr-2 text-slate-900" />
               AI 毒舌財富診斷
           </h3>
-          <span className="px-3 py-1 bg-slate-900 text-white text-xs rounded-full font-medium">
-              {advice.riskAnalysis}
-          </span>
+          <div className="pl-7">
+             <span className="px-4 py-1.5 bg-slate-900 text-white text-base rounded-full font-medium inline-block shadow-md">
+                {advice.riskAnalysis}
+             </span>
+          </div>
         </div>
         
         <div className="mb-8">
